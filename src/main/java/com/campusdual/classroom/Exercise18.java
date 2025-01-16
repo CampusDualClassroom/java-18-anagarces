@@ -10,15 +10,15 @@ public class Exercise18 {
 	public static void main(String[] args) {
 
 		System.out.println("Introduce el tamaño del array:");
-		int elementos = integer(); //le pedimos al usuario que introduzca un valor y lo almacenamos en elementos
-		int[] nuevoArray = createAndInitializeArray(elementos); //llamamos al metodo con el nuevo valor introducido
+		int valores = integer(); //le pedimos al usuario que introduzca un valor y lo almacenamos en elementos
+		int[] nuevoArray = createAndInitializeArray(valores); //llamamos al metodo con el nuevo valor introducido
 		showInlineArray(nuevoArray); //mostramos los elementos del array
 	}
 
-		public static int[] createAndInitializeArray (int elementos){
+		public static int[] createAndInitializeArray (int size){
 		//inicializamos el array a partir de 1
-			int[] intArray = new int[elementos];
-			for (int i = 0; i < elementos; i++) {
+			int[] intArray = new int[size];
+			for (int i = 0; i < size; i++) {
 				intArray[i] = i+1;
 			}
 			return intArray;
